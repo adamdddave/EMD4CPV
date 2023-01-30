@@ -1,0 +1,25 @@
+# build BaBar B-> K pi pi0  from https://arxiv.org/pdf/1105.0125.pdf
+# comment/uncomment event type for anything which may be necessary.
+# use AmpGen's CP conjugation to not need to guess values for noCPV
+
+#EventType B0 K+ pi- pi0
+EventType Bbar0 K- pi+ pi0
+
+CouplingConstant::Coordinates polar
+CouplingConstant::AngularUnits deg
+CoherentSum::Verbosity         0 
+#                                           Real / Amplitude   | Imaginary / Phase
+#                                           Fix?  Value  Step  | Fix?  Value  Step
+#B0{rho(770)-{pi-,pi0},K+}					2	  0.82	 0.08  	 2     0.0    0.0
+#B0{rho(1450)-{pi-,pi0},K+}					2	  0.57	 0.14	 2     126.   0.1
+#B0{rho(1700)-{pi-,pi0},K+}					2	  0.33	 0.15	 2     50.    0.1
+#B0{K*(892)+{K+,pi0},pi-}					2	  0.66	 0.06	 2     39.    0.1
+#B0{K*(892)0{K+,pi-},pi0}					2	  0.57	 0.6	 2     17.    0.1
+
+#CPV from paper
+Bbar0{rho(770)+{pi+,pi0},K-}				2	  1.0	 0.0  	 2     0.0    0.0
+Bbar0{rho(1450)+{pi+,pi0},K-}				2	  0.52	 0.15	 2     74.    18.
+Bbar0{rho(1700)+{pi+,pi0},K-}				2	  0.23	 0.12	 2     18.    36.
+Bbar0{K*(892)bar-{K-,pi0},pi+}				2	  0.49	 0.06	 2     33.    22.
+Bbar0{K*(892)bar0{K-,pi+},pi0}				2	  0.49	 0.05	 2     29.    18.
+#
