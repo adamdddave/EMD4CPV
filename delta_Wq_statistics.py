@@ -1,3 +1,10 @@
+"""
+# delta_Wq_statistics.py is a part of the EMD4CPV package.
+# Copyright (C) 2023 EMD4CPV authors (see AUTHORS for details).
+# EMD4CPV is licenced under the GNU GPL v2 or later, see COPYING for details.
+# Please respect the MCnet Guidelines, see GUIDELINES for details.
+"""
+
 from delta_Wq import *
 from energy_test import compute_T
 
