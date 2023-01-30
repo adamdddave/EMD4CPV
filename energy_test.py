@@ -125,7 +125,7 @@ def compute_T_w_manet(X_m2, Xbar_m2, path_to_manet):
 
 	with cd(path_to_manet + '/bin'):
 		os.chmod(path_to_manet + '/bin/energy_test_w_manet.sh', 0o755)
-		rc = call(path_to_manet + '/data/home/menzoad/Manet/bin/energy_test_w_manet.sh', shell=True)
+		rc = call(path_to_manet + '/bin/energy_test_w_manet.sh', shell=True)
 
 	# Read T value from file produced by Manet
 	with open(r'data/T_w_manet.txt', 'r') as csvfile:
