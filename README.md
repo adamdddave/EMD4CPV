@@ -1,4 +1,4 @@
-# EMD4CPV
+# EMD4CPV - [arXiv:2301.13211](https://arxiv.org/abs/2301.13211)
 
 Requirements: The ``delta_Wq_versus`` subclass requires Python 3.10+ while all other classes require Python 3+.
 
