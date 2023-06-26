@@ -502,7 +502,7 @@ class delta_Wq:
 	   Xbar_projection = Xbar_data.dot(projections.T)
 
 	   # Computing the Wasserstein distance from the two projected distribution i.e.the sorted difference
-	   SWq = (1/self.mass**2) * np.power(np.abs(np.sort(X_projection.T, axis=1) - np.sort(Xbar_projection.T, axis=1)), q)
+	   SWq = (1/self.mass**2)**q * np.power(np.abs(np.sort(X_projection.T, axis=1) - np.sort(Xbar_projection.T, axis=1)), q)
 	   
 	   return np.power(SWq.mean(), 1/q)
 
